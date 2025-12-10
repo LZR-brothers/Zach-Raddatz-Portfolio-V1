@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/high_scale.png); background-size:contain;">
+                <div class="center title" style="color:#e2001a;">
+                    <!--title text-->
+                    <h1>SWISS GRAPHIC DESIGN</h1>
+                    <!--subtitle or author-->
+                    <p class="author">ZACHARY RADDATZ</p>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p style="color:#e2001a;">This website describes a basemap on the professional Swiss digital artsytle.</p>
+
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/beethoven-josef-muller-brockmann (1).jpg">
+                </div>
+                <div class="right">
+                    <p class="vert-center"> Swiss design is most notably used in music posters professional concert flyers .</p>
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/high_scale.png" data-slide="1" class="fill">
+                    <img src="assets/madison.png" data-slide="2" class="fill hidden">
+                    <img src="assets/new_york.png" data-slide="3" class="fill hidden">
+                    <img src="assets/Southern California.png" data-slide="4" class="fill hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin"> The Midwest looks like this.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">The basemap becomes more geometrically stlyed as the viewer scales in.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin"> At low scales the map emphasizes theaters and artistic venues.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Here is a view of Southern California with different variations of the neue-haas-grotesk font .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/swiss-graphic-design-150.png">
+                            <p class="caption">The design choices were inspired by this angular and asetheticlly bold poster.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/madison_midscale.png">
+                            <p class="caption">A mid-scale view centered on Madison, Wisconsin.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/Southern California.png">
+                            <p class="caption">A large-scale view of Southern California.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/new_york.png">
+                            <p class="caption">A low-scale view of Downtown New York City.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe
+                    class="fit"
+                     src="https://api.mapbox.com/styles/v1/zraddatz/cmhoc1oxu003p01rzcw8geqb1.html?title=view&access_token=pk.eyJ1IjoienJhZGRhdHoiLCJhIjoiY21oM3ZqamRmMWhrbG45b2UyMHczemN2NyJ9.EIlPPpY2Bkdt1R63lRiXLg&zoomwheel=true&fresh=true#3.75/36.68/-80.85"
+                      title="lab 2 " 
+                      style="border:none;"
+                      height='400' 
+                      ></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
